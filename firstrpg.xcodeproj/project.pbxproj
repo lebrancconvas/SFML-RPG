@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B05B66ED25E89B1B00D7C6DF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B05B66EC25E89B1B00D7C6DF /* main.cpp */; };
 		B05B66F625E89B4B00D7C6DF /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B05B66F525E89B4B00D7C6DF /* libsfml-audio.2.5.1.dylib */; };
 		B05B66F725E89B4B00D7C6DF /* libsfml-audio.2.5.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B05B66F525E89B4B00D7C6DF /* libsfml-audio.2.5.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B05B66FA25E89B4E00D7C6DF /* libsfml-graphics.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B05B66F925E89B4E00D7C6DF /* libsfml-graphics.2.5.1.dylib */; };
@@ -18,6 +17,7 @@
 		B05B670125E89B5A00D7C6DF /* libsfml-system.2.5.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B05B66FF25E89B5A00D7C6DF /* libsfml-system.2.5.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B05B670325E89B5D00D7C6DF /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B05B670225E89B5D00D7C6DF /* libsfml-window.2.5.1.dylib */; };
 		B05B670425E89B5D00D7C6DF /* libsfml-window.2.5.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B05B670225E89B5D00D7C6DF /* libsfml-window.2.5.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B0FED9A725EB718A00F9CA36 /* thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0FED9A625EB718A00F9CA36 /* thread.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +55,7 @@
 		B05B66FC25E89B5400D7C6DF /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "../../../../../../../../opt/homebrew/Cellar/sfml/2.5.1_1/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
 		B05B66FF25E89B5A00D7C6DF /* libsfml-system.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-system.2.5.1.dylib"; path = "../../../../../../../../opt/homebrew/Cellar/sfml/2.5.1_1/lib/libsfml-system.2.5.1.dylib"; sourceTree = "<group>"; };
 		B05B670225E89B5D00D7C6DF /* libsfml-window.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-window.2.5.1.dylib"; path = "../../../../../../../../opt/homebrew/Cellar/sfml/2.5.1_1/lib/libsfml-window.2.5.1.dylib"; sourceTree = "<group>"; };
+		B0FED9A625EB718A00F9CA36 /* thread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = thread.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				B05B66EC25E89B1B00D7C6DF /* main.cpp */,
+				B0FED9A625EB718A00F9CA36 /* thread.cpp */,
 			);
 			path = firstrpg;
 			sourceTree = "<group>";
@@ -167,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B05B66ED25E89B1B00D7C6DF /* main.cpp in Sources */,
+				B0FED9A725EB718A00F9CA36 /* thread.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

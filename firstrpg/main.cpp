@@ -4,11 +4,28 @@
 
 using namespace sf;
 
+void renderingThread(RenderWindow* window)
+{
+    window->setActive();
+    while(window->isOpen())
+    {
+        //draw
+        
+        //end the current rame
+        window->display();
+    }
+}
+
 int main()
 {
     RenderWindow window(VideoMode(800, 600), "My Window");
+    window.setActive(false);
+    Thread thread(&renderingThread, &window);
+    thread.launch();
     CircleShape shape(50.0f);
-    shape.setFillColor(Color(100, 250, 50));
+    CircleShape shape2(70.0f);
+    shape.setFillColor(Color(0, 100, 70));
+    shape2.setFillColor(Color(200, 200, 100));
     
     while(window.isOpen())
     {
@@ -24,6 +41,7 @@ int main()
         
         window.clear();
         window.draw(shape);
+        window.draw(shape2);
         window.display();
     }
     return 0;

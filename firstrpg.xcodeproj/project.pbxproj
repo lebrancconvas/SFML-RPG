@@ -17,7 +17,7 @@
 		B05B670125E89B5A00D7C6DF /* libsfml-system.2.5.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B05B66FF25E89B5A00D7C6DF /* libsfml-system.2.5.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B05B670325E89B5D00D7C6DF /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B05B670225E89B5D00D7C6DF /* libsfml-window.2.5.1.dylib */; };
 		B05B670425E89B5D00D7C6DF /* libsfml-window.2.5.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B05B670225E89B5D00D7C6DF /* libsfml-window.2.5.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		B0FED9A725EB718A00F9CA36 /* thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0FED9A625EB718A00F9CA36 /* thread.cpp */; };
+		B0FED9A825EB74E400F9CA36 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B05B66EC25E89B1B00D7C6DF /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -169,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0FED9A725EB718A00F9CA36 /* thread.cpp in Sources */,
+				B0FED9A825EB74E400F9CA36 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
